@@ -1,0 +1,242 @@
+/*
+Extras a utilizar:
+(FONTS)
+font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;
+(COLORES)
+#2c3e50 (azulado cabecera)
+#18bc9c (celeste algunas secciones)
+#212529 (azulado)*/
+body{
+  margin: 0;
+  padding: 0;
+}
+nav{ /*BARRA SUPERIOR DE PAGINA WEB*/
+  display: block;
+  position: relative;
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 865px 1px 80px; /* ORDEN DE PADDING: TOP-RIGHT-BOTTOM-LEFT*/
+}
+h1, h2, h3, ul li{ /*FONT FAMILY QUE VAN A LLEVAR LOS SIGUIENTES ELEMENTOS*/
+  font-family: 'Montserrat', sans-serif;
+}
+p, input, button{
+  font-family: 'Lato', sans-serif;
+}
+.start_list h3{ /*TIENE EL "TITULO" DE PAGINA: START BOOTSTRAP*/
+  font-size: 28px;
+  left: 25px;
+}
+.start_list li{ /*TIENE LOS "FAKE LINKS" DE PORTFOLIO, ABOUT Y CONTACT*/
+  position: relative;
+  list-style: none;
+  color: white;
+  font-size: 17px;
+  float: left;
+  padding-right: 40px;
+  left: 800px;
+  bottom: 60px;
+}
+.start_list li a{
+  text-decoration: none;
+  color: white;
+}
+.start_bootstrap{ /*PRIMERA SECCION (INCLUYE LA FOTO DE PERFIL)*/
+  background-color: #18bc9c;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+h1{ /*TEXTO PRIMERA SECCION: "START BOOTSTRAP"*/
+  font-size: 76px;
+  line-height: 0px;
+}
+.start_bootstrap p{ /*TEXTO PARRAFO: Web Developer - Graphic Artist - User Exp Designer*/
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.line_icon_star_white{
+  color: white;
+  text-align: center;
+}
+.line_icon_star_white::after, .line_icon_star_white::before{
+  content: " ";
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.portfolio_draws h2, .about h2, .contact h2{ /*SUBTITULOS DE PAGINA: Portfolio, About, Contact Me*/
+  font-size: 44px;
+  line-height: 5px;
+  text-align: center;
+  margin-top: 50px;
+}
+.line_icon_star_blue{
+  color: #2c3e50;
+  text-align: center;
+}
+.line_icon_star_blue::after, .line_icon_star_blue::before{
+  content: " ";
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  background-color: #2c3e50;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.draws{ /*SEGUNDA SECCION: "PORTFOLIO"*/
+  display: inline-block;
+  margin-bottom: 110px;
+  margin: 50px;
+  padding-left: 60px;
+}
+.cabin, .cake, .circus, .game, .safe, .submarine{ /*TODAS LAS IMAGENES 2DA SECCION*/
+  display: inline-block;
+  width: 350px;
+  height: auto;
+  margin: 5px;
+  padding: 8px;
+}
+.about{ /*TERCERA SECCION: "ABOUT"*/
+  background-color: #18bc9c;
+  position: relative;
+  display: inline-block;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  color: white;
+  text-align: center;
+}
+.about .p1{ /*PRIMER PARRAFO "ABOUT"*/
+  font-size: 22px;
+  text-align: left;
+  position: absolute;
+  padding-left: 350px;
+  padding-right: 700px;
+}
+.about .p2{ /*SEGUNDO PARRAFO "ABOUT"*/
+  font-size: 22px;
+  text-align: left;
+  position: relative;
+  padding-left: 700px;
+  padding-right: 350px;
+}
+.contact{
+  margin: 0px;
+}
+input{ /*FORMULARIO DE LLENADO CUARTA SECCION: "CONTACT ME"*/
+  display: inline-block;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-left: 300px;
+  margin-bottom: 30px;
+  width: 700px;
+  height: 40px;
+  font-size: 24px;
+  color: gray;
+  text-align: left;
+  padding-left: 5px;
+}
+button{ /*CARACTERISTICAS EN COMUN DE BOTONES*/
+  position: relative;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 6px;
+  background-color: #18bc9c;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 25px;
+}
+button .download_theme{ /*BOTON DESCARGA*/
+  padding-left: 300px;
+  padding-top: 50px;
+}
+footer{ /*PIE DE PAGINA WEB*/
+  background-color: #2c3e50;
+  display: inline-block;
+  position: relative;
+}
+footer ul li{ /*LISTA DE ITEMS PIE DE PAGINA: "LOCATION", "AROUND THE WEB" Y "ABOUT FREELANCER"*/
+  list-style: none;
+  color: white;
+  position: relative;
+  float: left;
+  font-size: 26px;
+  text-align: center;
+  padding-left: 145px;
+  padding-right: 50px;
+  padding-top: 50px;
+}
+footer ul li .list_2{ /*LISTA DE ITEMS PIE DE PAGINA: "LOCATION", "AROUND THE WEB" Y "ABOUT FREELANCER"*/
+  list-style: none;
+  color: white;
+  position: relative;
+  float: left;
+  font-size: 19px;
+  text-align: center;
+  padding-left: 145px;
+  padding-right: 50px;
+  padding-top: 50px;
+}
+/*.p3{
+  position: relative;
+  /*float: left;*/
+  /*padding-left: ;*/
+  /*padding-right: 120px;
+  padding-top: 130px;
+  font-size: 19px;
+  text-align: center;
+}*/
+span{
+}
+.p4_round_buttons{ /*GRUPO DE "BOTONES" REDONDOS (Estos son solo decorativos) REDES SOCIALES*/
+  color: white;
+  position: relative;
+  padding-left: 510px;
+}
+.button_facebook{
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 2px;
+  padding: 10px 16px;
+}
+.button_google{
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 2px;
+  padding: 10px;
+}
+.button_twitter, .button_linkedin, .button_ball{
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 2px;
+  padding: 10px 12px;
+}
+/*.p5{
+  position: relative;
+  /*float: right;
+  padding-left: 840px;
+  padding-right: 60px;
+  text-align: center;
+  font-size: 19px;
+}*/
+.bootstrap_link{ /*LINK PIE DE PAGINA "START BOOTSTRAP"*/
+  color: #18bc9c;
+  text-decoration: none;
+}
+.copyright{ /*TEXTO COPYRIGHT*/
+  font-size: 16px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
