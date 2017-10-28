@@ -24,11 +24,11 @@ h1, h2, h3, ul li{ /*FONT FAMILY QUE VAN A LLEVAR LOS SIGUIENTES ELEMENTOS*/
 p, input, button{
   font-family: 'Lato', sans-serif;
 }
-.start_list h3{ /*TIENE EL "TITULO" DE PAGINA: START BOOTSTRAP*/
+.start_list{ /*TIENE EL "TITULO" DE PAGINA: START BOOTSTRAP*/
   font-size: 28px;
   left: 25px;
 }
-.start_list li{ /*TIENE LOS "FAKE LINKS" DE PORTFOLIO, ABOUT Y CONTACT*/
+.start_list li{ /*TIENE LOS LINKS DE PORTFOLIO, ABOUT Y CONTACT*/
   position: relative;
   list-style: none;
   color: white;
@@ -108,29 +108,55 @@ h1{ /*TEXTO PRIMERA SECCION: "START BOOTSTRAP"*/
 }
 .about{ /*TERCERA SECCION: "ABOUT"*/
   background-color: #18bc9c;
-  position: relative;
   display: inline-block;
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding: 50px 0;
   color: white;
   text-align: center;
 }
-.about .p1{ /*PRIMER PARRAFO "ABOUT"*/
-  font-size: 22px;
+.column_a, .column_b{
+  list-style: none;
+  line-height: 30px;
+  font-size: 20px;
   text-align: left;
+}
+.column_a{
   position: absolute;
-  padding-left: 350px;
+  padding-left: 300px;
   padding-right: 700px;
 }
-.about .p2{ /*SEGUNDO PARRAFO "ABOUT"*/
-  font-size: 22px;
-  text-align: left;
+.column_b{
   position: relative;
-  padding-left: 700px;
-  padding-right: 350px;
+  padding-left: 750px;
+  padding-right: 300px;
 }
 .contact{
-  margin: 0px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+button{ /*CARACTERISTICAS EN COMUN DE BOTONES*/
+  position: relative;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 6px;
+  background-color: #18bc9c;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+}
+.download_theme{ /*BOTON DESCARGA*/
+  color: white;
+  text-decoration: none;
+}
+.download_theme a{
+  color: white;
+  text-decoration: none;
+}
+.download_theme a:hover{
+  background-color: white;
+  color: #18bc9c;
+  text-decoration: none;
 }
 input{ /*FORMULARIO DE LLENADO CUARTA SECCION: "CONTACT ME"*/
   display: inline-block;
@@ -146,63 +172,36 @@ input{ /*FORMULARIO DE LLENADO CUARTA SECCION: "CONTACT ME"*/
   text-align: left;
   padding-left: 5px;
 }
-button{ /*CARACTERISTICAS EN COMUN DE BOTONES*/
-  position: relative;
-  display: inline-block;
-  border: 2px solid white;
-  border-radius: 6px;
-  background-color: #18bc9c;
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
-  padding: 10px 25px;
-}
-button .download_theme{ /*BOTON DESCARGA*/
-  padding-left: 300px;
-  padding-top: 50px;
+.send_button{ /*BOTON ENVIAR*/
+  margin-left: 300px;
 }
 footer{ /*PIE DE PAGINA WEB*/
   background-color: #2c3e50;
-  display: inline-block;
-  position: relative;
-}
-footer ul li{ /*LISTA DE ITEMS PIE DE PAGINA: "LOCATION", "AROUND THE WEB" Y "ABOUT FREELANCER"*/
-  list-style: none;
-  color: white;
-  position: relative;
+  width: 100%;
   float: left;
+  clear: both;
+}
+footer ul{
+  list-style: none;
+}
+footer section{
+  width: 390px;
+  float: left;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.subt_h3{
   font-size: 26px;
-  text-align: center;
-  padding-left: 145px;
-  padding-right: 50px;
-  padding-top: 50px;
+  padding-bottom: 15px;
 }
-footer ul li .list_2{ /*LISTA DE ITEMS PIE DE PAGINA: "LOCATION", "AROUND THE WEB" Y "ABOUT FREELANCER"*/
-  list-style: none;
-  color: white;
-  position: relative;
-  float: left;
-  font-size: 19px;
-  text-align: center;
-  padding-left: 145px;
-  padding-right: 50px;
-  padding-top: 50px;
+.column_1, .column_3 p{
+  font-size: 20px;
+  line-height: 30px;
 }
-/*.p3{
+.round_buttons{ /*GRUPO DE "BOTONES" REDONDOS (Estos son solo decorativos) REDES SOCIALES*/
   position: relative;
-  /*float: left;*/
-  /*padding-left: ;*/
-  /*padding-right: 120px;
-  padding-top: 130px;
-  font-size: 19px;
-  text-align: center;
-}*/
-span{
-}
-.p4_round_buttons{ /*GRUPO DE "BOTONES" REDONDOS (Estos son solo decorativos) REDES SOCIALES*/
-  color: white;
-  position: relative;
-  padding-left: 510px;
+  padding-top: 40px;
 }
 .button_facebook{
   border: 2px solid white;
@@ -220,23 +219,24 @@ span{
   border: 2px solid white;
   border-radius: 50%;
   margin: 2px;
-  padding: 10px 12px;
+  padding: 10px 13px;
 }
-/*.p5{
-  position: relative;
-  /*float: right;
-  padding-left: 840px;
-  padding-right: 60px;
-  text-align: center;
-  font-size: 19px;
-}*/
+.round_buttons a{
+  color: white;
+}
+.round_buttons a:hover{
+  background-color: white;
+  color: #18bc9c;
+  border-radius: 50%;
+  padding: 11px 0;
+}
 .bootstrap_link{ /*LINK PIE DE PAGINA "START BOOTSTRAP"*/
   color: #18bc9c;
   text-decoration: none;
 }
 .copyright{ /*TEXTO COPYRIGHT*/
+  color: white;
   font-size: 16px;
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-top: 30px;
 }

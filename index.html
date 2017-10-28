@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <nav>
+    <nav> <!--MENÚ DE HEADER-->
       <div class="start_list">
         <h3>START BOOTSTRAP</h3>
           <ul>
@@ -18,7 +18,7 @@
           </ul>
         </div>
       </nav>
-    <section class="start_bootstrap">
+    <section class="start_bootstrap"> <!--PRIMERA SECCIÓN (START BOOTSTRAP)-->
       <img src="assets/images/profile.png" class="profile_pic">
       <h1><strong>START BOOTSTRAP</strong></h1>
         <div class="line_icon_star_white">
@@ -26,7 +26,7 @@
         </div>
           <p>Web Developer - Graphic Artist - User Experience Designer</p>
     </section>
-    <section class="portfolio_draws">
+    <section class="portfolio_draws"> <!--SEGUNDA SECCIÓN (PORTFOLIO)-->
       <h2><strong>PORTFOLIO</strong></h2>
         <div class="line_icon_star_blue">
           <i class="fa fa-star fa-2x" aria-hidden="true"></i>
@@ -40,32 +40,35 @@
            <img src="assets/images/portfolio/submarine.png" class="submarine">
         </div>
     </section>
-    <section class="about">
+    <section class="about"> <!--TERCERA SECCIÓN (ABOUT)-->
       <h2><strong>ABOUT</strong></h2>
       <div class="line_icon_star_white">
         <i class="fa fa-star fa-2x" aria-hidden="true"></i>
       </div>
-        <p class="p1">Freelancer is a free bootstrap theme
+      <div class="column_a">
+        <p>Freelancer is a free bootstrap theme
            created by Start Bootstrap. The
            download includes the complete source
            files including HTML, CSS and
            JavaScript as well as optional LESS
            stylesheets for easy customization.</p>
-        <p class="p2">Whether you're a student looking to
+      </div>
+      <div class="column_b">
+        <p>Whether you're a student looking to
            showcase your work, a professional
            looking to attract clients, or a graphic
            artist looking to share your projects, this
            template is the perfect stating point!</p>
+      </div>
            <br>
-           <br>
-        <button type="button" name="download" class="download_theme"><i class="fa fa-download" aria-hidden="true"></i> Download Theme</button>
+        <button type="button" name="download" class="download_theme"><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download Theme</a></button>
     </section>
-    <section class="contact">
+    <section class="contact"> <!--CUARTA SECCIÓN (CONTACT ME)-->
       <h2><strong>CONTACT ME</strong></h2>
         <div class="line_icon_star_blue">
           <i class="fa fa-star fa-2x" aria-hidden="true"></i>
         </div>
-          <form class="contact_me" action="index.html" method="post">
+          <form class="contact_me" action="index.html" method="post"> <!--FORMULARIO DE LLENADO-->
             <input type="text" name="Name" placeholder="Name">
             <input type="text" name="Email_Address" placeholder="Email Address">
             <input type="text" name="Phone_Number" placeholder="Phone Number">
@@ -73,46 +76,38 @@
           </form>
         <button type="button" name="send" class="send_button">Send</button>
     </section>
-    <footer>
-      <ul>
-        <li><strong>LOCATION</strong></li>
-        <li><strong>AROUND THE WEB</strong></li>
-        <li><strong>ABOUT FREELANCER</strong></li>
-      </ul>
-      <ul class="list_2">
-        <li><p class="p3">3481 Melrose Place<br>
-        Beverly Hills, CA 90210</p></li>
-        <li><div class="p4_round_buttons">
-          <span class="button_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></span>
-          <span class="button_google"><i class="fa fa-google-plus" aria-hidden="true"></i></span>
-          <span class="button_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></span>
-          <span class="button_linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-          <span class="button_ball"><i class="fa fa-futbol-o" aria-hidden="true"></i></span>
-          </div>
-        </li>
-        <li><p class="p5">Freelancer is a free to use, open source
-          Bootstrap theme created by <a href="#" class="bootstrap_link">Start
-            Bootstrap</a>.</p>
-          <div class="copyright">
-            <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Your Website 2017</p>
-          </div>
-        </li>
-      </ul>
-        <!--<p class="p3">3481 Melrose Place<br>
-        Beverly Hills, CA 90210</p>
-      <div class="p4_round_buttons">
-        <span class="button_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></span>
-        <span class="button_google"><i class="fa fa-google-plus" aria-hidden="true"></i></span>
-        <span class="button_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></span>
-        <span class="button_linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-        <span class="button_ball"><i class="fa fa-futbol-o" aria-hidden="true"></i></span>
-      </div>
-        <p class="p5">Freelancer is a free to use, open source
-          Bootstrap theme created by <a href="#" class="bootstrap_link">Start
-            Bootstrap</a>.</p>
-          <div class="copyright">
-            <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Your Website 2017</p>
-          </div>-->
+    <footer> <!--PIE DE PÁGINA-->
+      <section class="column_1">
+        <ul>
+          <li class="subt_h3"><strong>LOCATION</strong></li>
+          <li><p>3481 Melrose Place<br>
+          Beverly Hills, CA 90210</p>
+          </li>
+        </ul>
+      </section>
+      <section class="column_2">
+        <ul>
+          <li class="subt_h3"><strong>AROUND THE WEB</strong></li>
+          <li><div class="round_buttons">
+            <a href="#"><span class="button_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+            <a href="#"><span class="button_google"><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+            <a href="#"><span class="button_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+            <a href="#"><span class="button_linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
+            <a href="#"><span class="button_ball"><i class="fa fa-futbol-o" aria-hidden="true"></i></span></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="column_3">
+        <ul>
+          <li class="subt_h3"><strong>ABOUT FREELANCER</strong></li>
+          <li><p>Freelancer is a free to use, open source
+            Bootstrap theme created by <a href="#" class="bootstrap_link">Start
+              Bootstrap</a>.</p>
+         </li>
+        </ul>
+      </section>
+        <p class="copyright">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Your Website 2017</p>
     </footer>
   </body>
 </html>
